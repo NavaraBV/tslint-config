@@ -1,0 +1,52 @@
+{
+  "name": "@navara/tslint-config",
+  "version": "1.0.0",
+  "description": "NAVARA TSLint config",
+  "main": "tslint.json",
+  "scripts": {
+    "lint": "tslint test/fixture.ts -c tslint-local.json -p tsconfig.json --fix",
+    "test": "mocha test/config.spec.js",
+    "preversion": "npm test",
+    "version": "git add -A",
+    "postversion": "git push origin master && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NavaraBV/tslint-config.git"
+  },
+  "keywords": [
+    "styleguide",
+    "typescript",
+    "config",
+    "tslintconfig",
+    "tslint"
+  ],
+  "author": "Yves Candel <ycandel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NavaraBV/tslint-config/issues"
+  },
+  "homepage": "https://github.com/NavaraBV/tslint-config#readme",
+  "peerDependencies": {
+    "codelyzer": ">=4.0.1",
+    "tslint": ">=5.8.0"
+  },
+  "devDependencies": {
+    "@angular/common": "5.1.0",
+    "@angular/compiler": "5.1.0",
+    "@angular/core": "5.1.0",
+    "@angular/language-service": "5.1.0",
+    "@angular/platform-browser": "5.1.0",
+    "@angular/platform-browser-dynamic": "5.1.0",
+    "chai": "4.1.0",
+    "change-case": "3.0.1",
+    "codelyzer": "4.0.1",
+    "husky": "0.14.3",
+    "mocha": "3.5.2",
+    "rxjs": "5.5.5",
+    "strip-json-comments": "2.0.1",
+    "tslint": "5.8.0",
+    "typescript": "2.4.2",
+    "zone.js": "0.8.18"
+  }
+}
